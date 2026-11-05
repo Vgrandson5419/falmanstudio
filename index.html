@@ -3,41 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f1e9">
-  <meta name="description" content="Thoughtful essentials and objects from Falman Studio.">
-  <title>Falman Studio — Objects for everyday</title>
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Falman Studio — timeless form, pure aesthetic.">
+  <title>Falman Studio — Timeless Form</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement">A little more good in your everyday <span>— free shipping over $100</span></div>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Falman Studio home">falman<span>studio</span><i>®</i></a>
+    <a class="wordmark" href="#top" aria-label="Falman Studio home">FALMAN <span>STUDIO</span></a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#shop">Shop</a>
-      <a href="#story">Our approach</a>
-      <a href="#footer">Contact</a>
+      <a href="#top" aria-current="page">Home</a>
+      <a href="#shop">Store</a>
+      <a href="#shop">T-shirts</a>
+      <a href="#shop">Longsleeves</a>
+      <a href="#shop">Hats</a>
     </nav>
     <button class="cart-trigger" type="button" aria-label="Open shopping bag">Bag <span class="cart-count">0</span></button>
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">A small studio with a big point of view</p>
-        <h1>Make room for<br><em>the good stuff.</em></h1>
-        <p class="hero-intro">Considered pieces for everyday life. Made to be used, loved, and kept around.</p>
-        <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
-        <div class="hero-note"><span class="sparkle">✳</span> Thoughtfully selected. Always personal.</div>
+        <p class="hero-monogram" aria-hidden="true">F</p>
+        <h1 id="hero-title">FALMAN STUDIO</h1>
+        <p class="hero-intro">TIMELESS FORM <span>·</span> PURE AESTHETIC</p>
+        <a class="button button-dark" href="#shop">ENTER THE STORE</a>
       </div>
-      <div class="hero-art" role="img" aria-label="Abstract still life in warm studio colors">
-        <div class="art-sun"></div><div class="art-arch"></div><div class="art-vase"></div><div class="art-stem stem-one"></div><div class="art-stem stem-two"></div>
-        <span class="art-caption">FALMAN STUDIO · EST. 2024</span>
-      </div>
-      <span class="hero-index">01 / 03</span>
+      <span class="hero-index" aria-hidden="true">FALMAN STUDIO</span>
     </section>
 
     <section class="shop-section" id="shop">
@@ -72,7 +69,7 @@
   </main>
 
   <footer class="site-footer" id="footer">
-    <a class="wordmark footer-wordmark" href="#top">falman<span>studio</span><i>®</i></a>
+    <a class="wordmark footer-wordmark" href="#top">FALMAN <span>STUDIO</span></a>
     <p>Objects for everyday. Made with intention.</p>
     <div class="footer-links"><a href="mailto:hello@falmanstudio.com">Email us</a><a href="#shop">Shop all</a><span>© <span id="year"></span> Falman Studio</span></div>
   </footer>
@@ -82,7 +79,7 @@
     <div class="drawer-heading"><div><p class="eyebrow">Your selection</p><h2>Your bag <span class="cart-count">0</span></h2></div><button class="close-cart" type="button" aria-label="Close shopping bag">×</button></div>
     <div class="cart-items"></div>
     <div class="empty-cart"><span>✳</span><p>Your bag is taking a little break.</p><a href="#shop" class="text-link close-and-shop">Find something good <span aria-hidden="true">↗</span></a></div>
-    <div class="cart-summary"><p class="shipping-message">You’re $100 away from complimentary shipping.</p><div class="shipping-track"><span></span></div><div class="subtotal-row"><span>Subtotal</span><strong class="cart-subtotal">$0.00</strong></div><p class="tax-note">Shipping and taxes calculated at checkout.</p><a class="button button-dark checkout-button" href="mailto:hello@falmanstudio.com?subject=Falman%20Studio%20order">Checkout by email <span aria-hidden="true">↗</span></a><p class="checkout-note">This demo store does not process payments online. We’ll confirm your order by email.</p></div>
+    <div class="cart-summary"><p class="shipping-message">You’re $100 away from complimentary shipping.</p><div class="shipping-track"><span></span></div><div class="subtotal-row"><span>Subtotal</span><strong class="cart-subtotal">$0.00</strong></div><a class="checkout-button" href="mailto:hello@falmanstudio.com">Continue to checkout</a></div>
   </aside>
   <div class="toast" role="status" aria-live="polite"></div>
 </body>
